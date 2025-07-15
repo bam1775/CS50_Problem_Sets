@@ -12,12 +12,20 @@ int main() {
 
     for(int i=0; i<10; i++)
     {
+        do
+        {
+            
+        }
+        while(0);
     }
 
     value_char = letterScore(ScrabbleTest);
     printf("The value of the character is: %d\n", value_char);
     
 }
+
+
+
 
 char letterScore(char letter) {
   switch (letter) {
@@ -101,3 +109,62 @@ char letterScore(char letter) {
             return 10;
     }
 }
+
+/******************************************************************************
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+char compare();
+
+int main()
+{
+    int counter = 0;
+    char player1[25];
+    char player2[25];
+    
+    do 
+    {
+        
+        printf("Player" "Enter your word:");
+        scanf(" %s", player1);
+        counter = counter + 1 + compare(player1, "match");
+    }
+    while (counter<10);
+
+    return 0;
+}
+
+char letters_only(char wordcheck[])
+{
+    for(int rr=0; rr<strlen(wordcheck); rr++)
+    {
+        if(wordcheck[rr] < )
+    }
+}
+
+char compare(char p1[], char p2[])
+{
+    int match = 0;
+    
+    for(int ii=0; ii<strlen(p1); ii++)
+    {
+        for(int jj=0; jj<strlen(p2); jj++)
+        {
+            if(p1[ii]==p2[jj])
+            {
+                match = 1;
+                break;
+            }
+        }
+    }
+    if(match == 0)
+    {
+        return -1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+*******************************************************************************/
